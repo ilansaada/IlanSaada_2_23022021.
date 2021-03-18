@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+* {
+    font-family: 'Raleway';
+
+    
+size: 10px;
+}
+
+
+
+
+.nav {
+   padding: 20px 0;
+    margin: 20px 0;
+}
+
+
+ a:hover 
+ {
+color:rgb(0, 110, 255)
+ }
+
+
+
+.bloc1,.bloc2,.bloc3
+{
+    
+    background-color:#F2F2F2;
+    
+}
+
+.footer
+ {
+     background-color:#F2F2F2;
+    
+ }
