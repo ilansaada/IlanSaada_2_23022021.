@@ -1,4 +1,3 @@
-
 *,
 *::before,
 *::after,
@@ -450,7 +449,7 @@ aside {
 
 .aside-cart img {
   object-fit: cover;
-  width: 125px;
+  width: 100px;
   height: 135px;
   margin: 5px;
   border-top-left-radius: 15px;
@@ -463,15 +462,17 @@ aside {
 
   margin-top: -125px;
   margin-left: 120px;
+  font-size: 0.7em;
+  margin-right: 20px;
+  
 }
-
 .cart-details h3 {
-  font-size: 16px;
+  font-size: 1.3em;
+}
+.cart-details p {
+  font-size: 1.2em;
 }
 
-.cart-details p {
-  font-size: 15px;
-}
 
 .cart-star-icons {
   margin-top: 40px;
@@ -485,7 +486,7 @@ aside {
 
 /*============Menu principal Activités=========*/
 
-main .activites__list .activites__group {
+.activites__group {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -499,7 +500,7 @@ main .activites__list .activites__group {
 .title {
   margin-bottom: 50px;
 }
-main .activites__list .activites__group .activite {
+.activite {
   width: 23%;
   display: flex;
   justify-content: space-between;
@@ -511,11 +512,11 @@ main .activites__list .activites__group .activite {
   box-shadow: 0 0 6px 3px #b1b1b14b;
 }
 
-main .activites__list .activites__group .activite .image {
+.activite .image {
   flex: 1;
   border-radius: 8px 8px 0 0;
 }
-main .activites__list .activites__group .activite h6 {
+.activite h6 {
   font-size: 0.9em;
   margin: 15px;
 }
@@ -532,32 +533,32 @@ main .activites__list .activites__group .activite6 {
   flex-basis: 45%;
 }
 
-main .activites__list .activites__group .activite1 .image {
+.activite1 .image {
   background-image: url("../img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
   background-size: cover;
   background-position: center;
 }
-main .activites__list .activites__group .activite2 .image {
+.activite2 .image {
   background-image: url("../img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
   background-size: cover;
   background-position: center;
 }
-main .activites__list .activites__group .activite3 .image {
+.activite3 .image {
   background-image: url("../img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
   background-size: cover;
   background-position: center;
 }
-main .activites__list .activites__group .activite4 .image {
+.activite4 .image {
   background-image: url("../img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
   background-size: cover;
   background-position: center;
 }
-main .activites__list .activites__group .activite5 .image {
+.activite5 .image {
   background-image: url("../img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
   background-size: cover;
   background-position: center;
 }
-main .activites__list .activites__group .activite6 .image {
+.activite6 .image {
   background-image: url("../img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
   background-size: cover;
   background-position: center;
@@ -617,58 +618,16 @@ footer h1 {
 .footer-link:hover {
   color: #0065fc;
 }
-
+footer h1 {
+  font-size: 14px !important;
+}
+.footer-link {
+  font-size: 12px !important;
+}
 /* Mediaqueries */
 
-@media screen and (min-width: 1024px) {
-  .lodgements-details h3 {
-    font-size: 13px;
-    margin-left: 15px;
-    margin-top: 10px;
-  }
 
-  .lodgements-details p {
-    font-size: 13px;
-    margin-left: 15px;
-    margin-bottom: 5px;
-  }
-  .aside-title h2 {
-    font-size: 18px;
-  }
-
-  .aside-container {
-    width: 274px;
-    margin-left: 0;
-  }
-  .aside-cart img {
-    width: 100px;
-  }
-  .cart-details {
-    font-size: 0.7em;
-    margin-right: 20px;
-  }
-
-  .cart-details h3 {
-    font-size: 1.3em;
-  }
-
-  .cart-details p {
-    font-size: 1.2em;
-  }
-  .cart-star-icons {
-    margin-bottom: 0;
-    margin-top: 40px;
-  }
-
-  footer h1 {
-    font-size: 14px !important;
-  }
-  .footer-link {
-    font-size: 12px !important;
-  }
-}
-
-@media screen and (min-width: 765px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .btn-2 {
     display: none;
   }
@@ -1012,120 +971,3 @@ footer h1 {
 }
 
 
-@media screen and (max-width: 346px) {
-  .main-container h1 {
-    font-size: 20px;
-  }
-  .btn-1 .search {
-    position: relative;
-    right: 5px;
-    margin-right: 0px;
-    width: 69%;
-    height: 50px;
-    border: 1px solid #f2f2f2;
-    font-size: 15px;
-    font-weight: bold;
-  }
-
-  .main-nav .activities::after {
-    margin-left: -50px !important;
-  }
-
-  .btn-2-min {
-    position: relative;
-    bottom: 45px;
-    left: 83%;
-    display: block;
-    background-color: #0065fc;
-    height: 40px;
-    width: 40px;
-    border-radius: 10px;
-    line-height: 40px;
-    border: none;
-    cursor: pointer;
-  }
-  .filter-mini {
-    display: flex;
-    margin-left: -50px;
-    flex-direction: column;
-  }
-  .family {
-    margin-left: 0;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .main-nav .activities::after {
-    margin-left: -60px !important;
-  }
-
-  .main-nav .min-location::after {
-    margin-left: -60px !important;
-  }
-
-  .btn-2-min {
-    position: relative;
-    bottom: 45px;
-    left: 83%;
-    display: block;
-    background-color: #0065fc;
-    height: 40px;
-    width: 40px;
-    border-radius: 10px;
-    line-height: 40px;
-    border: none;
-    cursor: pointer;
-  }
-}
-
-@media screen and (max-width: 280px) {
-  .main-nav {
-    margin-left: -14px;
-  }
-  .main-nav .activities::after {
-    margin-left: -55px !important;
-  }
-
-  .main-nav .min-location::after {
-    margin-left: -35px !important;
-  }
-
-  .btn-1 .search {
-    font-size: 12px;
-  }
-
-  .btn-2-min {
-    height: 45px;
-    width: 45px;
-    border-radius: 10px;
-    line-height: 30px;
-  }
-
-  .search-container {
-    margin-top: 28px;
-  }
-
-  .main-container {
-    position: relative;
-    top: 0;
-  }
-
-  .infos {
-    margin-top: 31px;
-  }
-
-  .cart-details h3,
-  .cart-details p {
-    font-size: 11px;
-    margin-left: -11px;
-  }
-
-  .lodgement h2,
-  .activite h2 {
-    font-size: 15px;
-  }
-
-  .cart-star-icons {
-    margin-top: 53px;
-  }
-}
