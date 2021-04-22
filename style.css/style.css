@@ -28,12 +28,10 @@ a:hover {
   transform: scale(1.01);
 }
 
+
 h2 {
   font-size: 20px;
 }
-
-
-
 
 html,
 body {
@@ -41,12 +39,6 @@ body {
   overflow-x: hidden;
 }
 
-.bigcontainer {
-  max-width: 1250px;
-  margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
-}
 
 /*=======En-tête========*/
 
@@ -572,7 +564,7 @@ footer {
   width: auto;
   height: 215px;
   background-color: #f2f2f2;
-  margin: 10px;
+  
 }
 
 .footer-line {
@@ -678,11 +670,7 @@ footer h4 {
     background-color: #fff;
   }
 
-  aside {
-    width: 100vw;
-    margin-bottom: 50px;
-    margin-left: -40px;
-  }
+  
 
   .aside-container {
     width: 100%;
@@ -704,7 +692,7 @@ footer h4 {
   }
 }
 
-@media screen and (max-width: 764px) {
+@media screen and (max-width: 768px) {
   header {
     margin: 15px;
     padding: 15px;
@@ -752,10 +740,7 @@ footer h4 {
     margin-top: 29px;
   }
 
-  .bigcontainer {
-    padding-left: 0;
-    padding-right: 0;
-  }
+ 
 
   main {
     padding: 0;
@@ -874,7 +859,7 @@ footer h4 {
   aside {
     width: 100vw;
     margin-bottom: 50px;
-    margin-left: -3px;
+    margin-left: 0px;
     margin-bottom: 50px;
   }
   .aside-container {
@@ -946,7 +931,7 @@ footer h4 {
 
   footer {
     height: auto;
-    margin: -10px;
+   
   }
 
   .footer-line {
